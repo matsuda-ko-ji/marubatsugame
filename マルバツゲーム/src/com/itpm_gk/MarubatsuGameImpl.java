@@ -1,6 +1,7 @@
 package com.itpm_gk;
 
 import com.itpm_gk.controller.GameController;
+import com.itpm_gk.controller.GameController.OnFinishListener;
 import com.itpm_gk.controller.GameControllerImpl;
 import com.itpm_gk.data.model.GameModel;
 import com.itpm_gk.data.model.GameModelImpl;
@@ -19,6 +20,16 @@ public class MarubatsuGameImpl implements MarubatsuGame{
 		
 		gameController = new GameControllerImpl(gameView,gameModel);
 		
+		gameController.setOnFinishListener(new OnFinishListener() {
+
+			@Override
+			public void onFinish(Reason reason) {
+				finish(reason);
+			}
+			
+		}
+		);
+		
 	}
 	@Override
 	public void exec() {
@@ -29,7 +40,15 @@ public class MarubatsuGameImpl implements MarubatsuGame{
 
 	@Override
 	public void finish(Reason reason) {
-		// TODO 自動生成されたメソッド・スタブ
+		//ゲーム終了
+		switch(reason) {
+			case USER_CHOOSES:
+				System.out.print("EXIT");
+				System.exit(0);
+				break;
+			default:
+				break;
+		}
 		
 	}
 	
