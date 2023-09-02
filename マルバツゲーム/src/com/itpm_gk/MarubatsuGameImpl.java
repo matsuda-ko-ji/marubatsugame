@@ -25,11 +25,8 @@ public class MarubatsuGameImpl implements MarubatsuGame{
 			@Override
 			public void onFinish(Reason reason) {
 				finish(reason);
-			}
-			
-		}
-		);
-		
+			}	
+		});
 	}
 	@Override
 	public void exec() {
@@ -43,7 +40,6 @@ public class MarubatsuGameImpl implements MarubatsuGame{
 		//ゲーム終了
 		switch(reason) {
 			case USER_CHOOSES:
-				System.out.print("EXIT");
 				System.exit(0);
 				break;
 			default:

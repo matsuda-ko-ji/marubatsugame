@@ -35,7 +35,7 @@ public class GameControllerImpl implements GameController, GameView.OnUserInputC
 	public void selectTitleScreenItem(TitleScreenItem item) {
 		switch(item) {
 			case GAME_START:
-			
+				gameView.gameDisplay();
 				break;
 			case GAME_FINISH:
 				listener.onFinish(Reason.USER_CHOOSES);
@@ -44,6 +44,8 @@ public class GameControllerImpl implements GameController, GameView.OnUserInputC
 		}
 		
 	}
+	
+	
 	
 	
 

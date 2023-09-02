@@ -15,4 +15,5 @@ public interface GameController {
 		
 		void onFinish(MarubatsuGame.Reason reason);
 	}
+
 }

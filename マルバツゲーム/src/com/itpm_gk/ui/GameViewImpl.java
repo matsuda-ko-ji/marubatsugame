@@ -26,4 +26,52 @@ public class GameViewImpl implements GameView{
 		}
 	
 	}
+
+	@Override
+	public void gameDisplay() {
+		
+		String str1 = "１|２|３";
+		String str2 = "４|５|６";
+		String str3 = "７|８|９";
+		String str4 = "━ ━ ━";
+			
+		System.out.println(str1);
+		System.out.println(str4);
+		System.out.println(str2);
+		System.out.println(str4);
+		System.out.println(str3);
+		System.out.println("〇のターンです");
+		System.out.println("入力する番号を選んでください");
+		
+		String userInput = scanner.nextLine();
+		
+		switch(userInput) {
+			case"1":
+				String str5 = str1.replace("１","〇");
+				System.out.println(str5);
+				System.out.println(str4);
+				System.out.println(str2);
+				System.out.println(str4);
+				System.out.println(str3);
+				System.out.println("×のターンです");
+				System.out.println("入力する番号を選んでください");
+			case"2":
+				System.out.println();
+			case"3":
+				System.out.println();
+			case"4":
+				System.out.println();
+			case"5":
+				System.out.println();
+			case"6":
+				System.out.println();
+			case"7":
+				System.out.println();
+			case"8":
+				System.out.println();
+			case"9":
+				System.out.println();
+				
+		}
+	}
 }
