@@ -33,7 +33,7 @@ public class GameViewImpl implements GameView{
 		String str1 = "１|２|３";
 		String str2 = "４|５|６";
 		String str3 = "７|８|９";
-		String str4 = "━ ━ ━";
+		String str4 = "ー ー ー";
 			
 		System.out.println(str1);
 		System.out.println(str4);
