@@ -26,6 +26,7 @@ public interface GameView {
 	}
 	
 	enum BordItem{
+		NUMBER_CHANGE
 		
 	}
 }

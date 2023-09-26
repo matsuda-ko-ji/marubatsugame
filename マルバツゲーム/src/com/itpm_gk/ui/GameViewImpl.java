@@ -47,6 +47,7 @@ public class GameViewImpl implements GameView{
 		
 		switch(userInput) {
 			case"1":
+				callback.displayBordItem(BordItem.CHANGE_NUMBER);
 				String str5 = str1.replace("１","〇");
 				System.out.println(str5);
 				System.out.println(str4);
